@@ -1,3 +1,23 @@
+■課題内容  
+TODOリストをつくってみる。ReactHooksを使う。  
+▼TODOリスト内の各TODOにほしい要素  
+　済・ID(連番もしくはuuidを設定)  
+　済・タイトル  
+　済・ステータス(未着手、進行中、完了 など)  
+　済・詳細  
+▼ほしい機能  
+　済・TODOの追加  
+　済・TODOの削除  
+▼余裕があれば以下のようなカスタマイズをする  
+　済・TODOの編集機能  
+　済・フィルター(ID、期限、ステータスで絞り込み)  
+　　or  
+　済・ソート(ID、期限、ステータスで並べ替え)  
+　済・要素追加（内容、作成日、更新日など）  
+　済・ステータス変更でスタイル変更  
+　済・TODOリストを1箇所(どのパーツでもOK)コンポーネント化してみる  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
