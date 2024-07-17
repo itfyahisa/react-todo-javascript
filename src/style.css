@@ -1,15 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    margin: 20px auto 0;
+}
+
+p {
+    margin-top: 20px;
 }
 
 input {
-    padding: 6px 16px;
+    padding: 8px 16px;
     margin-bottom: 16px;
     margin-right: 8px;
 }
 
+label {
+    margin-left: 20px;
+}
+
+span {
+    margin: 20px;
+}
+
 .todo-table {
+    margin-top: 20px;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -20,14 +39,9 @@ td {
 }
 
 th {
-    width: 180px;
     height: 40px;
     text-align: left;
     background-color: #f2f2f2;
-}
-
-th:first-child {
-    width: 80px;
 }
 
 td {
@@ -36,9 +50,13 @@ td {
     word-break: break-all;
 }
 
+.sort-button {
+    margin-top: 20px;
+}
+
 button {
     border-radius: 4px;
-    padding: 4px 16px;
+    padding: 8px 16px;
     margin: 0 2px;
 }
 
@@ -49,6 +67,10 @@ button:hover {
 }
 
 select {
-    padding: 6px;
+    padding: 8px;
     margin-right: 8px;
+}
+
+.filter-status {
+    margin-top: 20px;
 }
