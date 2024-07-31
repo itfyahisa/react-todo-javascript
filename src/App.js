@@ -11,9 +11,6 @@ import FilterStatus from "./components/FilterStatus";
 
 function App() {
 
-  const today = dayjs().format('YYYY/MM/DD')
-
-  // const [todos, setTodos] = useState(['todo1', 'todo2'])
   const [todos, setTodos] = useState([
     // { id: uuidv4(), title: 'todo0', status: '未着手', detail: 'testtesttest', deadLine: today }, uuidで出すとこれ
     { id: 1, title: 'todo1', status: '未着手', detail: 'testtesttest', deadLine: "2024/07/17" },
@@ -24,8 +21,7 @@ function App() {
     { id: 6, title: 'todo3', status: '完了', detail: 'testtesttest', deadLine: "2024/07/19" }
   ])
   const statuses = ['未着手', '着手', '完了']
-
-  console.log(todos)
+  const today = dayjs().format('YYYY/MM/DD')
 
   //todoAdd
   const [todoText, setTodoText] = useState('')
@@ -33,7 +29,6 @@ function App() {
 
   const [detailText, setDetailText] = useState('')
   const onChangeDetailText = (event) => setDetailText(event.target.value)
-
 
   const [statusSelect, setStatusSelect] = useState('未着手')
   const onChangeStatus = (event) => setStatusSelect(event.target.value)
@@ -101,6 +96,7 @@ function App() {
     setFilteredTodos(sortedDeadLine)
   }
 
+  //statusの順番定義
   const getStatusOrder = (status) => {
     const statusOrder = { '未着手': 1, '着手': 2, '完了': 3 }
     return statusOrder[status]
